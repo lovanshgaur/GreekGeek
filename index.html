@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreekGeek</title>
+    <link rel="stylesheet" href="style.css" class="css" />
+  </head>
+  <body>
+    <header>
+      <nav>GreekGeek</nav>
+      <div class="header-profile">
+        <img src="assets/header.png" alt="" />
+      </div>
+      <div class="header-text">
+        <h4>Step Into the Pantheon of the</h4>
+        <h1>GreekGeek</h1>
+        <button class="btn"><a href="https://greekgeek-ygnt.onrender.com" target="_blank">GoTo-API</a></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="info">
+        <div class="info-text">
+          <h2>What is the GreekGeek API?</h2>
+          <p>
+            The <strong>GreekGeek API</strong> is a RESTful service that opens
+            the gates to the fascinating world of Greek mythology. It provides
+            detailed, structured information about: Gods, Goddess, Heroes,
+            Monsters, Places and Weapons from Greek Mythology.
+          </p>
+          <p>
+            Whether you're a developer, mythology enthusiast, or researcher, the
+            GreekGeek API provides all you need to bring Greek mythology into
+            your projects.
+          </p>
+        </div>
+        <div class="info-profile"><img src="assets/info.png" alt="" /></div>
+      </section>
+
+      <section class="get-data">
+        <div class="get-data-profile">
+          <img src="assets/triton.png" alt="" />
+        </div>
+        <div class="get-data-profile">
+          <img src="assets/woman-8127650_1280.png" alt="" />
+        </div>
+
+        <h2>API Endpoints</h2>
+        <div class="section-container">
+          <div class="endpoint-box">
+            <label for="get-characters">Get Characters Endpoint:</label>
+            <div class="input">
+              <div class="get">GET</div>
+              <input
+                id="get-characters"
+                type="text"
+                value="/api/getCharacters"
+                readonly
+              />
+              <button class="copy-btn" onclick="copyEndpoint('get-characters', this)">Copy</button>
+            </div>
+          </div>
+        
+          <div class="endpoint-box">
+            <label for="get-monsters">Get Monsters Endpoint:</label>
+            <div class="input">
+              <div class="get">GET</div>
+              <input
+                id="get-monsters"
+                type="text"
+                value="/api/getMonsters"
+                readonly
+              />
+              <button class="copy-btn" onclick="copyEndpoint('get-monsters', this)">Copy</button>
+            </div>
+          </div>
+        
+          <div class="endpoint-box">
+            <label for="get-places">Get Places Endpoint:</label>
+            <div class="input">
+              <div class="get">GET</div>
+              <input
+                id="get-places"
+                type="text"
+                value="/api/getPlaces"
+                readonly
+              />
+              <button class="copy-btn" onclick="copyEndpoint('get-places', this)">Copy</button>
+            </div>
+          </div>
+        
+          <div class="endpoint-box">
+            <label for="get-weapons">Get Weapons Endpoint:</label>
+            <div class="input">
+              <div class="get">GET</div>
+              <input
+                id="get-weapons"
+                type="text"
+                value="/api/getWeapons"
+                readonly
+              />
+              <button class="copy-btn" onclick="copyEndpoint('get-weapons', this)">Copy</button>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="data-object">
+        <div class="data-name">
+          <div class="data-profile"></div>
+          <h2>getCharacters</h2>
+        </div>
+        <div class="object-example">
+          <div class="object-profile">
+            <img src="assets/mythology.png" alt="" />
+          </div>
+          <textarea name="" id="character-example" readonly></textarea>
+        </div>
+      </section>
+
+      <section class="data-object">
+        <div class="data-name">
+          <div class="data-profile"></div>
+          <h2>getMonsters</h2>
+        </div>
+        <div class="object-example">
+          <div class="object-profile" id="griffin">
+            <img src="assets/griffin.png" alt="" />
+          </div>
+          <textarea name="" id="monster-example" readonly></textarea>
+        </div>
+      </section>
+
+      <section class="data-object">
+        <div class="data-name">
+          <div class="data-profile"></div>
+          <h2>getPlaces</h2>
+        </div>
+        <div class="object-example">
+          <div class="object-profile" id="place">
+            <img src="assets/greek.png" alt="" />
+          </div>
+          <textarea name="" id="place-example" readonly></textarea>
+        </div>
+      </section>
+
+      <section class="data-object">
+        <div class="data-name">
+          <div class="data-profile"></div>
+          <h2>getWeapons</h2>
+        </div>
+        <div class="object-example">
+          <div class="object-profile">
+            <img src="assets/lacoon.png" alt="" />
+          </div>
+          <textarea name="" id="weapon-example" readonly></textarea>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-profile">
+        <img src="assets/dragons.png" alt="" />
+      </div>
+      <div class="footer-profile">
+        <img src="assets/ganymede.png" alt="" />
+      </div>
+      <div class="footer-text">
+        <h4>Made with love ❤️</h4>
+        <a href="https://udayprakash999.github.io/Professional-portfolio/"
+          >UdayPrakash</a
+        >
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
